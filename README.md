@@ -26,6 +26,12 @@ A modern microkernel-based operating system written in Zig, featuring Mach IPC, 
 - **System Calls** - Extensible syscall table for user-space interfaces
 - **Process Isolation** - Separate address spaces with virtual memory
 
+### Apps Included
+
+[EnochFetch](https://github.com/MelvinMod/EnochFetch)
+[EnochEdit](https://github.com/MelvinMod/EnochEdit)
+[EnochBrowse](https://github.com/MelvinMod/EnochBrowse)
+
 ## Building
 
 ### Prerequisites
