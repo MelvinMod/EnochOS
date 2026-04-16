@@ -28,9 +28,9 @@ A modern microkernel-based operating system written in Zig, featuring Mach IPC, 
 
 ### Apps Included
 
-[EnochFetch](https://github.com/MelvinMod/EnochFetch)
-[EnochEdit](https://github.com/MelvinMod/EnochEdit)
-[EnochBrowse](https://github.com/MelvinMod/EnochBrowse)
+- [EnochFetch](https://github.com/MelvinMod/EnochFetch)
+- [EnochEdit](https://github.com/MelvinMod/EnochEdit)
+- [EnochBrowse](https://github.com/MelvinMod/EnochBrowse)
 
 ## Building
 
