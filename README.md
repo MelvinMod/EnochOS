@@ -26,42 +26,6 @@ A modern microkernel-based operating system written in Zig, featuring Mach IPC, 
 - **System Calls** - Extensible syscall table for user-space interfaces
 - **Process Isolation** - Separate address spaces with virtual memory
 
-## Architecture
-
-```
-┌─────────────────────────────────────────────────┐
-│                  User Space                     │
-│  ┌─────────┐  ┌─────────┐  ┌─────────┐        │
-│  │ enoch   │  │ enoch   │  │ enochedit│       │
-│  │ browse  │  │ fetch   │  │         │        │
-│  └─────────┘  └─────────┘  └─────────┘        │
-└─────────────────────────────────────────────────┘
-                    │ Syscalls
-┌─────────────────────────────────────────────────┐
-│                  Kernel Space                   │
-│  ┌─────────────────────────────────────────┐   │
-│  │              Mach IPC                    │   │
-│  │  (Ports, Messages, Notifications)        │   │
-│  └─────────────────────────────────────────┘   │
-│  ┌────────────┐  ┌────────────┐               │
-│  │   VFS      │  │   Device   │               │
-│  │ (Enhanced) │  │  Manager   │               │
-│  └────────────┘  └────────────┘               │
-│  ┌────────────┐  ┌────────────┐               │
-│  │   Buddy    │  │  Virtual   │               │
-│  │ Allocator  │  │  Memory    │               │
-│  │ (THP)      │  │  (Paging)  │               │
-│  └────────────┘  └────────────┘               │
-│  ┌────────────┐  ┌────────────┐               │
-│  │  Scheduler │  │   Timer    │               │
-│  └────────────┘  └────────────┘               │
-│  ┌────────────┐  ┌────────────┐               │
-│  │    IDT     │  │    GDT     │               │
-│  │   (PIC)    │  │            │               │
-│  └────────────┘  └────────────┘               │
-└─────────────────────────────────────────────────┘
-```
-
 ## Building
 
 ### Prerequisites
@@ -83,7 +47,7 @@ zig build iso
 zig build run
 ```
 
-## Project Structure
+## Project Structure (example)
 
 ```
 EnochOS/
@@ -140,7 +104,6 @@ This is a single-developer project (MelvinSGjr), but ideas and suggestions are w
 
 - **Developer**: MelvinSGjr
 - **GitHub**: @MelvinMod
-- **Location**: Romania
 
 ## Roadmap
 
