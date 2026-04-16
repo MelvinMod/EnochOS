@@ -83,7 +83,7 @@ EnochOS/
 │   ├── ipc.zig        # Basic IPC
 │   └── ipc_mach.zig   # Mach IPC subsystem
 └── apps/
-    ├── enochbrowse/   # File browser
+    ├── enochbrowse/   # Internet browser
     ├── enochfetch/    # System info
     └── enochedit/     # Text editor
 ```
